@@ -2,7 +2,7 @@
 // Lista para almacenar los nombres ingresados
 let nombres = [];
 
-// Referencias a los elementos del DOM
+// agrego las const
 const inputNombre = document.getElementById("amigo"); // Campo de texto para el nombre
 const listaNombres = document.getElementById("listaAmigos"); // Lista visible de nombres
 const listaResultado = document.getElementById("resultado"); // Lista donde se mostrará el resultado
