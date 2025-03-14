@@ -44,3 +44,10 @@ function sortearAmigo() {
     resultadoElemento.textContent = `El amigo sorteado es: ${nombreSorteado}`;
     listaResultado.appendChild(resultadoElemento);
 }
+// Permitir agregar un nombre presionando la tecla ENTER
+inputNombre.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Evita que el formulario se envíe (en caso de estar dentro de uno)
+        agregarAmigo(); // Llama a la función que agrega el nombre
+    }
+})
